@@ -1,0 +1,12 @@
+{
+  "name": "pack/utils",
+    "authors": [
+        {
+            "name": "Thomaz De Souza Staziak Silva"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "dev-develop",
+        "mpdf/mpdf":"6.1.1"
+    }
+}
