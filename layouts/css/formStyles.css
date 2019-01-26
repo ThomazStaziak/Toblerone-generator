@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+  background-color: #d84d4d40;
+}
+
+input[type='file'] {
+  display: none
+}
+
+nav {
+  background-color: #d84d4d;
+}
+
+.form {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper label {
+  background-color: #d84d4d;
+  border-radius: 5px;
+  color: #fff;
+  margin: 10px;
+  padding: 6px 20px;
+}
+
+.input-wrapper label:hover {
+  background-color: #dd0e0e;
+}
+
+.gen {
+  transition: all 0.3s;
+}
+
+.gen:hover {
+  background-color: #ffc107;
+  border-color: transparent;
+  padding: 10px 15px;
+}

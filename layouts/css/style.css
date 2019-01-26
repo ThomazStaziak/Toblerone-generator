@@ -1,0 +1,64 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 200px;
+}
+
+div {
+  width: 100%;
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+}
+
+p {
+  font-family: arial;
+  font-size: 500%;
+}
+
+.center {
+  position: absolute;
+  top: 30%;
+}
+
+.top-left {
+  float: left;
+}
+
+.top-right {
+  float: right;
+  width: 500px;
+}
+
+.sub-top {
+  position: absolute;
+  top: 20%;
+}
+
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.bottom-left {
+  float: left;
+  width: 500px;
+}
+
+.bottom-right {
+  float: right;
+  margin-right: 10px;
+}
+
+.sub-bottom {
+  position: absolute;
+  bottom: 20%;
+}

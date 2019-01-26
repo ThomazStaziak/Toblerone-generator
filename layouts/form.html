@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/formStyles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light d-flex justify-content-center">
+      <a class="navbar-brand" href="#">
+        Toblerone Generator
+      </a>
+    </nav>
+    <div class="form">
+      <form action="../index.php" method="post" enctype="multipart/form-data">
+        <div class="form-group input-wrapper">
+          <label for="exampleFormControlFile1">Escolha um arquivo >></label>
+          <input type="file" class="form-control-file" id="exampleFormControlFile1" name="arquivo">
+          <button class="gen btn btn-warning" type="submit">Gerar PDF</button>
+        </div>
+      </form>
+
+      <!-- <a href="../index.php">Gerar PDF</a> -->
+    </div>
+  </body>
+</html>
