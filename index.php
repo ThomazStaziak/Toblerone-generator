@@ -1,4 +1,7 @@
 <?php
+  if (!$_FILES && !$_POST) 
+    header("Location: layouts/form.html");
+
   require "vendor/phpoffice/excel/Classes/PHPExcel.php";
   require_once 'vendor/autoload.php';
 
