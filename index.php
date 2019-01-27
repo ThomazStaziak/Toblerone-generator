@@ -1,5 +1,5 @@
 <?php
-  require "vendor/phpoffice/phpexcel/Classes/PHPExcel.php";
+  require "vendor/phpoffice/excel/Classes/PHPExcel.php";
   require_once 'vendor/autoload.php';
 
   // Habilitando os caracteres especiais para serem convertidos
