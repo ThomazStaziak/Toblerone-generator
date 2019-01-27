@@ -5,8 +5,8 @@
   // Habilitando os caracteres especiais para serem convertidos
   setlocale(LC_CTYPE, "de_DE.UTF8");
 
-  use Dompdf\Options;
   use Dompdf\Dompdf;
+  use Dompdf\Options;
 
   $nomesInvertidos = [];
   $nomes = [];
@@ -23,6 +23,8 @@
     $tempName = $_FILES["arquivo"]["tmp_name"];
     $erro = $_FILES["arquivo"]["error"];
     $nomeArquivo = $_FILES["arquivo"]["name"];
+    $nomeArquivoSemExtensao = explode(".", $nomeArquivo);
+    $nomeArquivoSemExtensao = $nomeArquivoSemExtensao[0];
     $diretorio = dirname(__FILE__);
     $nomePasta = "/files/";
     $caminhoCompleto = $diretorio.$nomePasta.$nomeArquivo;
@@ -105,6 +107,6 @@
   $dompdf->set_option('defaultFont', 'times');
   $dompdf->setPaper('A4', 'landscape');
   $dompdf->render();
-  $dompdf->stream($nomeArquivo.'.pdf');
+  $dompdf->stream($nomeArquivoSemExtensao.'.pdf');
 
   ?>

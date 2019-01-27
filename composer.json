@@ -7,6 +7,6 @@
     ],
     "require": {
         "phpoffice/phpspreadsheet": "dev-develop",
-        "mpdf/mpdf":"6.1.1"
+        "dompdf/dompdf": "dev-master"
     }
 }
