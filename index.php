@@ -105,6 +105,6 @@
   $dompdf->set_option('defaultFont', 'times');
   $dompdf->setPaper('A4', 'landscape');
   $dompdf->render();
-  $dompdf->stream('teste.pdf');
+  $dompdf->stream($nomeArquivo.'.pdf');
 
   ?>
