@@ -1,5 +1,5 @@
 <?php
-  if (!$_FILES && !$_POST) 
+  if (!$_FILES && !$_POST)
     header("Location: layouts/form.html");
 
   require "vendor/phpoffice/excel/Classes/PHPExcel.php";
@@ -39,11 +39,11 @@
     }
   }
 
-  // transformando o arquivo .xlsx em .csv
-  $objReader = PHPExcel_IOFactory::createReader("Excel2007");
+  // transformando o arquivo .xls em .csv
+  $objReader = PHPExcel_IOFactory::createReader("Excel5");
   $objPHPExcel = $objReader->load($caminhoCompleto);
   $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, "CSV");
-  $csvFileName = str_replace(".xlsx", ".csv", $caminhoCompleto);
+  $csvFileName = str_replace(".xls", ".csv", $caminhoCompleto);
   $objWriter->save($csvFileName);
 
   // Pegando o conteúdo do arquivo .csv e colocando em um array
