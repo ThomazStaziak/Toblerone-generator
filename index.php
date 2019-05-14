@@ -81,14 +81,14 @@
       <div style='height: 21cm; width:29.7cm;'>
         <div style='width: 90%;'>
           <img style='position: absolute; top: -5%; width:400px' src='layouts/img/ri_3.png'>
-          <img style='float: right; width: 800px;' src='layouts/img/ri_2.png'>
+          <img style='float: right; width: 250px;' src='layouts/img/dh_contrario.png'>
         </div>
         <hr style='width: 120%; position: absolute; top: 18%; display:block; float:left'>
         <div style='width:100%; text-align: center; position: absolute; top: 35%;'>
           <p style='font-family: Helvetica; font-size: 400%; margin-right:5%'> $value </p>
         </div>
         <hr style='width: 120%; position: absolute; bottom: 15%; display:block; float:left'>
-        <img style='position: absolute; bottom: 10%; width: 900px;' src='layouts/img/ri_9.png'>
+        <img style='position: absolute; bottom: 10%; width: 250px;' src='layouts/img/dh_normal.png'>
         <img style='position: absolute; bottom: 14%; width: 400px; margin-left:60%' src='layouts/img/ri_8.png'>
         <span></span>
       </div>

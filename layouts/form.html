@@ -16,13 +16,25 @@
     <div class="form">
       <form action="../index.php" method="post" enctype="multipart/form-data">
         <div class="form-group input-wrapper">
-          <label for="exampleFormControlFile1">Escolha um arquivo >></label>
-          <input type="file" class="form-control-file" id="exampleFormControlFile1" name="arquivo">
+          <label for="arquivo">Escolha um arquivo >> </label>
+          <input type="file" class="form-control-file" id="arquivo" name="arquivo">
+          <span id="mensagem" class="d-none alert alert-success"></span>
           <button class="gen btn btn-warning" type="submit">Gerar PDF</button>
         </div>
       </form>
 
       <!-- <a href="../index.php">Gerar PDF</a> -->
     </div>
+    <script>
+      setInterval(() => {
+        if (arquivo.value != '') {
+          mensagem.classList.remove('d-none')
+          mensagem.innerHTML = `Arquivo ${arquivo.files[0].name} selecionado`
+          console.log('achou')
+        } else {
+          console.log('ñ achou')
+        }
+      }, 100)
+    </script>
   </body>
 </html>
